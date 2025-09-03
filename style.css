@@ -54,7 +54,8 @@ html {
     gap: 2rem;
 }
 
-.nav-link {
+.nav-link,
+.nav-active {
     color: #333;
     text-decoration: none;
     font-weight: 500;
@@ -62,7 +63,8 @@ html {
 }
 
 .nav-link:hover,
-.nav-link.active {
+.nav-link.active,
+.nav-active {
     color: #667eea;
 }
 
@@ -120,8 +122,8 @@ html {
 }
 
 .btn-secondary {
-    background: white;
-    color: #667eea !important;
+    background: transparent;
+    color: white !important;
     border: 2px solid white;
 }
 
@@ -151,8 +153,8 @@ html {
 }
 
 .btn-secondary:not(:hover):not(:focus):not(:active) {
-    background: white;
-    color: #667eea !important;
+    background: transparent;
+    color: white !important;
     transform: translateY(0);
     box-shadow: none;
 }
