@@ -894,6 +894,14 @@ body {
     color: #666;
 }
 
+/* Page Content Bottom Spacing */
+.about-content,
+.portfolio-content,
+.resume-content,
+.contact-content {
+    margin-bottom: 60px;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .about-hero h1,
