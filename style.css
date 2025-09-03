@@ -100,11 +100,40 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 20px;
 }
 
 .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Value Propositions Section */
+.value-props {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.value-prop {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.value-prop h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.value-prop p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
 /* Featured Projects */
@@ -117,13 +146,16 @@ body {
     text-align: center;
     color: #333;
     margin-bottom: 60px;
+    font-weight: 600;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 40px;
     margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -133,6 +165,7 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 5px solid #667eea;
+    position: relative;
 }
 
 .project-card:hover {
@@ -144,18 +177,22 @@ body {
     font-size: 1.4rem;
     color: #333;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .project-description {
     color: #666;
     margin-bottom: 20px;
     line-height: 1.6;
+    font-size: 1rem;
 }
 
 .project-impact {
     color: #667eea;
     font-weight: 600;
     font-size: 1.1rem;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
 }
 
 /* Skills Section */
@@ -167,7 +204,7 @@ body {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     max-width: 1000px;
     margin: 0 auto;
@@ -177,27 +214,33 @@ body {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     text-align: center;
     border-top: 4px solid #667eea;
+    transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-3px);
 }
 
 .skill-category h4 {
     color: #333;
     font-size: 1.2rem;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .skill-category p {
     color: #666;
     line-height: 1.5;
+    font-size: 0.95rem;
 }
 
 /* Footer */
 .footer {
     background: #333;
     color: white;
-    text-align: center;
     padding: 40px 20px;
     margin-top: 80px;
 }
@@ -212,9 +255,14 @@ body {
     gap: 20px;
 }
 
+.footer-content p {
+    margin: 0;
+    color: #ccc;
+}
+
 .footer-links {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -222,23 +270,11 @@ body {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-weight: 500;
 }
 
 .footer-links a:hover {
-    color: #4c63d2;
-}
-
-/* Mobile Footer */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-    
-    .footer-links {
-        justify-content: center;
-    }
+    color: #667eea;
 }
 
 /* About Page Styles */
@@ -253,6 +289,7 @@ body {
 .about-hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .about-subtitle {
@@ -262,7 +299,7 @@ body {
 
 .about-content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     padding: 0 20px;
 }
 
@@ -271,6 +308,7 @@ body {
     font-size: 2rem;
     margin-bottom: 20px;
     margin-top: 40px;
+    font-weight: 600;
 }
 
 .about-text h3 {
@@ -278,17 +316,26 @@ body {
     font-size: 1.5rem;
     margin-bottom: 15px;
     margin-top: 30px;
+    font-weight: 600;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
 }
 
 .accomplishment-list {
     list-style: none;
     padding: 0;
+    margin: 20px 0;
 }
 
 .accomplishment-list li {
     padding: 10px 0;
     padding-left: 25px;
     position: relative;
+    line-height: 1.5;
 }
 
 .accomplishment-list li:before {
@@ -305,9 +352,17 @@ body {
     margin-top: 20px;
 }
 
+.education-item {
+    background: #f8f9ff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
 .education-item h4 {
     color: #333;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .education-item p {
@@ -327,6 +382,7 @@ body {
 .portfolio-hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .portfolio-subtitle {
@@ -336,7 +392,7 @@ body {
 
 .portfolio-content {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     padding: 0 20px;
 }
 
@@ -353,6 +409,7 @@ body {
     color: #333;
     font-size: 2rem;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .case-study-details h3 {
@@ -360,15 +417,24 @@ body {
     font-size: 1.3rem;
     margin-bottom: 15px;
     margin-top: 25px;
+    font-weight: 600;
+}
+
+.case-study-details p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
 }
 
 .case-study-approach ul {
     padding-left: 20px;
+    margin: 15px 0;
 }
 
 .case-study-approach li {
     margin-bottom: 8px;
     line-height: 1.6;
+    color: #555;
 }
 
 .results-grid {
@@ -390,6 +456,12 @@ body {
     color: #667eea;
     font-size: 2rem;
     margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.result-item p {
+    color: #555;
+    font-size: 0.9rem;
 }
 
 .portfolio-additional {
@@ -400,6 +472,7 @@ body {
     text-align: center;
     color: #333;
     margin-bottom: 40px;
+    font-weight: 600;
 }
 
 .additional-grid {
@@ -413,11 +486,18 @@ body {
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid #667eea;
 }
 
 .additional-item h3 {
     color: #667eea;
     margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.additional-item p {
+    color: #555;
+    line-height: 1.5;
 }
 
 /* Resume Page Styles */
@@ -432,10 +512,15 @@ body {
 .resume-header h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .contact-info {
     margin: 20px 0;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
 }
 
 .contact-info a {
@@ -453,7 +538,7 @@ body {
 
 .resume-content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     padding: 0 20px;
 }
 
@@ -467,11 +552,12 @@ body {
     margin-bottom: 25px;
     padding-bottom: 10px;
     border-bottom: 2px solid #667eea;
+    font-weight: 600;
 }
 
 .job {
     margin-bottom: 35px;
-    padding: 20px;
+    padding: 25px;
     background: #f8f9ff;
     border-radius: 8px;
     border-left: 4px solid #667eea;
@@ -485,6 +571,7 @@ body {
     color: #333;
     font-size: 1.3rem;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .job-info {
@@ -512,12 +599,7 @@ body {
 .job-responsibilities li {
     margin-bottom: 8px;
     line-height: 1.5;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    color: #555;
 }
 
 .skill-group {
@@ -525,11 +607,18 @@ body {
     padding: 20px;
     border-radius: 8px;
     border-left: 4px solid #667eea;
+    margin-bottom: 15px;
 }
 
 .skill-group h3 {
     color: #333;
     margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.skill-group p {
+    color: #555;
+    line-height: 1.5;
 }
 
 .skills-list {
@@ -547,6 +636,7 @@ body {
     padding: 8px 0;
     padding-left: 20px;
     position: relative;
+    color: #555;
 }
 
 .skills-column li:before {
@@ -562,22 +652,6 @@ body {
     gap: 20px;
 }
 
-.education-item {
-    background: #f8f9ff;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid #667eea;
-}
-
-.education-item h3 {
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.education-item p {
-    color: #666;
-}
-
 .achievements-list {
     list-style: none;
     padding: 0;
@@ -585,11 +659,12 @@ body {
 
 .achievements-list li {
     background: #f8f9ff;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 15px;
     border-radius: 8px;
     border-left: 4px solid #667eea;
     line-height: 1.6;
+    color: #555;
 }
 
 /* Contact Page Styles */
@@ -604,6 +679,7 @@ body {
 .contact-hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .contact-subtitle {
@@ -613,7 +689,7 @@ body {
 
 .contact-content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     padding: 0 20px;
 }
 
@@ -639,11 +715,17 @@ body {
 .contact-method h3 {
     color: #333;
     margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-method p {
+    color: #555;
 }
 
 .contact-method a {
     color: #667eea;
     text-decoration: none;
+    font-weight: 500;
     word-break: break-word;
     overflow-wrap: break-word;
 }
@@ -660,6 +742,7 @@ body {
     color: #333;
     text-align: center;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .services-grid {
@@ -679,6 +762,12 @@ body {
 .service-item h4 {
     color: #667eea;
     margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.service-item p {
+    color: #555;
+    line-height: 1.5;
 }
 
 .availability {
@@ -691,6 +780,13 @@ body {
 .availability h2 {
     color: #333;
     margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.availability p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 .availability ul {
@@ -700,6 +796,7 @@ body {
 
 .availability li {
     margin-bottom: 8px;
+    color: #555;
 }
 
 .response-time {
@@ -707,16 +804,47 @@ body {
     color: #666;
 }
 
-/* Page Content Bottom Spacing */
-.about-content,
-.portfolio-content,
-.resume-content,
-.contact-content {
-    margin-bottom: 60px;
-}
-
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 1rem 15px;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .project-card {
+        padding: 25px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .value-props {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
     .about-hero h1,
     .portfolio-hero h1,
     .contact-hero h1 {
@@ -742,29 +870,13 @@ body {
         padding: 25px;
     }
     
-    .hero h1 {
-        font-size: 2.5rem;
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
     }
     
-    .tagline {
-        font-size: 1.2rem;
-    }
-    
-    .description {
-        font-size: 1rem;
-    }
-    
-    .nav-menu {
-        gap: 1rem;
-    }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .footer-links {
+        justify-content: center;
     }
 }
