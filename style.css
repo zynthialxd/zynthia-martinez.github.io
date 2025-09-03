@@ -138,8 +138,16 @@ body {
     text-decoration: none !important;
 }
 
-.btn-primary:active,
-.btn-secondary:active {
+.btn-primary:not(:hover):not(:focus):not(:active) {
+    background: white;
+    color: #667eea !important;
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.btn-secondary:not(:hover):not(:focus):not(:active) {
+    background: transparent;
+    color: white !important;
     transform: translateY(0);
     box-shadow: none;
 }
