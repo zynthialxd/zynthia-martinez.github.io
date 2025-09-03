@@ -151,8 +151,11 @@ html {
 }
 
 .btn-secondary:not(:hover):not(:focus):not(:active) {
-    background: white;  ← Should be "white", not "transparent"
+    background: white;
     color: #667eea !important;
+    transform: translateY(0);
+    box-shadow: none;
+}
 
 .cta-button:hover {
     transform: translateY(-2px);
