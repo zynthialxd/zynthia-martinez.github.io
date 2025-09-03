@@ -153,8 +153,8 @@ html {
 }
 
 .btn-secondary:not(:hover):not(:focus):not(:active) {
-    background: transparent;
-    color: white !important;
+    background: white;
+    color: #667eea !important;
     transform: translateY(0);
     box-shadow: none;
 }
