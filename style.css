@@ -90,6 +90,10 @@ body {
     line-height: 1.6;
 }
 
+.hero-buttons {
+    margin-top: 30px;
+}
+
 .cta-button {
     display: inline-block;
     background: white;
