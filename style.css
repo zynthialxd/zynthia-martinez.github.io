@@ -295,7 +295,7 @@ html {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 40px auto 0 auto; /* This adds 40px top margin */
 }
 
 .skill-category {
