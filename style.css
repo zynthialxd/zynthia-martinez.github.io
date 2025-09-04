@@ -967,27 +967,22 @@ html {
     }
 }
 
-/* Clean spacing fix - remove conflicting rules */
+/* Match Core Expertise spacing exactly */
 
-/* Reset any excessive spacing from Featured Projects section */
-section.featured-projects {
-    padding-bottom: 0 !important;
-}
-
-/* Simple, clean spacing on the h2 in Featured Projects */
+/* Make Featured Projects h2 behave like Skills section h2 */
 section.featured-projects h2 {
-    margin-bottom: 40px !important;
+    margin-bottom: 0 !important; /* Remove the section-title margin */
     padding-bottom: 0 !important;
     border-bottom: none !important;
 }
 
-/* Remove the ::after spacer that's adding extra space */
-section.featured-projects h2::after {
-    display: none !important;
+/* Make project-grid behave like skills-grid */
+.project-grid {
+    margin: 40px auto 0 auto !important; /* Match skills-grid exactly */
+    padding-top: 0 !important;
 }
 
-/* Simple spacing for project grid */
-.project-grid {
-    margin-top: 20px !important;
-    padding-top: 0 !important;
+/* Remove any extra spacers */
+section.featured-projects h2::after {
+    display: none !important;
 }
