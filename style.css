@@ -72,8 +72,8 @@ html {
 }
 
 .nav-menu a:hover,
-.nav-menu a.nav-active {
-    color: #667eea !important;
+.nav-menu a.active {
+    color: #667eea;
 }
 
 /* Hero Section */
