@@ -231,12 +231,6 @@ html {
     border-left: 5px solid #667eea;
     position: relative;
 }
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
 .project-card h4 {
     font-size: 1.4rem;
     color: #333;
