@@ -965,61 +965,20 @@ html {
     .footer-links {
         justify-content: center;
     }
-    /* Try adding this to the END of your CSS file to override everything */
-
-/* Force spacing after section titles */
-.section-title {
-    margin-bottom: 80px !important;
-    padding-bottom: 40px !important;
-    display: block !important;
+    /* Create spacing after Featured Projects title specifically */
+.featured-projects .section-title {
+    margin-bottom: 60px !important;
 }
 
-/* Force spacing before project grids */
-.projects-grid {
-    margin-top: 60px !important;
-    padding-top: 40px !important;
-}
-
-/* Force spacing before skills grid */
-.skills-grid {
-    margin-top: 60px !important;
-    padding-top: 40px !important;
-}
-
-/* Alternative approach - add spacing to the parent containers */
-.featured-projects {
-    padding-bottom: 60px !important;
-}
-
-.skills {
-    padding-top: 120px !important;
-}
-
-/* Nuclear option - if nothing else works, try this */
-.section-title:after {
-    content: "";
-    display: block;
-    height: 60px;
-    width: 100%;
-}
-    /* Specifically target Featured Projects section */
-.featured-projects h2:after,
 .featured-projects .section-title:after {
     content: "";
     display: block;
-    height: 60px !important;
+    height: 40px;
     width: 100%;
 }
 
-/* Alternative - force spacing on the featured projects container */
-.featured-projects {
-    margin-bottom: 80px !important;
-    padding-bottom: 60px !important;
-}
-
-/* Force the projects grid down */
+/* Ensure projects grid has proper top spacing */
 .featured-projects .projects-grid {
-    margin-top: 80px !important;
-    padding-top: 40px !important;
+    margin-top: 60px !important;
 }
 }
