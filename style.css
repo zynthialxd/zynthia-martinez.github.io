@@ -965,7 +965,8 @@ html {
     .footer-links {
         justify-content: center;
     }
-    /* Create spacing after Featured Projects title specifically */
+}
+ /* Create spacing after Featured Projects title specifically */
 .featured-projects .section-title {
     margin-bottom: 60px !important;
 }
@@ -980,5 +981,4 @@ html {
 /* Ensure projects grid has proper top spacing */
 .featured-projects .projects-grid {
     margin-top: 60px !important;
-}
 }
