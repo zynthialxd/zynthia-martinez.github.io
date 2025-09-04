@@ -966,19 +966,20 @@ html {
         justify-content: center;
     }
 }
- /* Create spacing after Featured Projects title specifically */
-.featured-projects .section-title {
+
+.featured-projects h2 {
     margin-bottom: 60px !important;
 }
 
-.featured-projects .section-title:after {
+.featured-projects h2:after {
     content: "";
     display: block;
     height: 40px;
     width: 100%;
 }
 
-/* Ensure projects grid has proper top spacing */
-.featured-projects .projects-grid {
+/* Target the actual grid class name from your HTML */
+.project-grid {
     margin-top: 60px !important;
+    padding-top: 20px !important;
 }
