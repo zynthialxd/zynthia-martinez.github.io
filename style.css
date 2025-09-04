@@ -310,11 +310,6 @@ html {
     border-top: 4px solid #667eea;
     transition: transform 0.3s ease;
 }
-
-.skill-category:hover {
-    transform: translateY(-3px);
-}
-
 .skill-category h4 {
     color: #333;
     font-size: 1.2rem;
