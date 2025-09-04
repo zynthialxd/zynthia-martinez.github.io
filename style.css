@@ -967,31 +967,31 @@ html {
     }
 }
 
-/* Super aggressive spacing fix - replace current rules with this */
+/* Balanced spacing fix - matching Core Expertise section */
 
-/* Force spacing on the Featured Projects section */
+/* Remove excessive padding from Featured Projects section */
 section.featured-projects {
-    padding-bottom: 100px !important;
+    padding-bottom: 0 !important;
 }
 
-/* Force spacing on the h2 in Featured Projects */
+/* Moderate spacing on the h2 in Featured Projects */
 section.featured-projects h2 {
-    margin-bottom: 80px !important;
-    padding-bottom: 60px !important;
-    border-bottom: 1px solid transparent !important;
+    margin-bottom: 40px !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
 }
 
-/* Force the project grid to have top spacing */
+/* Moderate spacing for project grid */
 .project-grid {
-    margin-top: 100px !important;
-    padding-top: 40px !important;
+    margin-top: 40px !important;
+    padding-top: 0 !important;
 }
 
-/* Nuclear option - add physical spacer */
+/* Small spacer after title */
 section.featured-projects h2::after {
     content: "";
     display: block !important;
-    height: 80px !important;
+    height: 40px !important;
     width: 100% !important;
     background: transparent !important;
 }
