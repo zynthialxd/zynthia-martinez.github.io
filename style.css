@@ -967,19 +967,31 @@ html {
     }
 }
 
-.featured-projects h2 {
-    margin-bottom: 60px !important;
+/* Super aggressive spacing fix - replace current rules with this */
+
+/* Force spacing on the Featured Projects section */
+section.featured-projects {
+    padding-bottom: 100px !important;
 }
 
-.featured-projects h2:after {
-    content: "";
-    display: block;
-    height: 40px;
-    width: 100%;
+/* Force spacing on the h2 in Featured Projects */
+section.featured-projects h2 {
+    margin-bottom: 80px !important;
+    padding-bottom: 60px !important;
+    border-bottom: 1px solid transparent !important;
 }
 
-/* Target the actual grid class name from your HTML */
+/* Force the project grid to have top spacing */
 .project-grid {
-    margin-top: 60px !important;
-    padding-top: 20px !important;
+    margin-top: 100px !important;
+    padding-top: 40px !important;
+}
+
+/* Nuclear option - add physical spacer */
+section.featured-projects h2::after {
+    content: "";
+    display: block !important;
+    height: 80px !important;
+    width: 100% !important;
+    background: transparent !important;
 }
