@@ -254,6 +254,8 @@ html {
     background: #5a6fd8;
     color: white !important;
     text-decoration: none !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 .project-description {
