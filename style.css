@@ -967,31 +967,27 @@ html {
     }
 }
 
-/* Balanced spacing fix - matching Core Expertise section */
+/* Clean spacing fix - remove conflicting rules */
 
-/* Remove excessive padding from Featured Projects section */
+/* Reset any excessive spacing from Featured Projects section */
 section.featured-projects {
     padding-bottom: 0 !important;
 }
 
-/* Moderate spacing on the h2 in Featured Projects */
+/* Simple, clean spacing on the h2 in Featured Projects */
 section.featured-projects h2 {
     margin-bottom: 40px !important;
     padding-bottom: 0 !important;
     border-bottom: none !important;
 }
 
-/* Moderate spacing for project grid */
-.project-grid {
-    margin-top: 40px !important;
-    padding-top: 0 !important;
+/* Remove the ::after spacer that's adding extra space */
+section.featured-projects h2::after {
+    display: none !important;
 }
 
-/* Small spacer after title */
-section.featured-projects h2::after {
-    content: "";
-    display: block !important;
-    height: 40px !important;
-    width: 100% !important;
-    background: transparent !important;
+/* Simple spacing for project grid */
+.project-grid {
+    margin-top: 20px !important;
+    padding-top: 0 !important;
 }
