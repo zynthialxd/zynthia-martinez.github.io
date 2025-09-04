@@ -224,7 +224,7 @@ html {
     gap: 40px;
     margin-bottom: 40px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto 40px auto; /* This adds 40px top margin */
 }
 
 .project-card {
