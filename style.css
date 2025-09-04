@@ -243,6 +243,24 @@ html {
     margin-bottom: 15px;
     font-weight: 600;
 }
+.project-link {
+    display: inline-block;
+    background: #667eea;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+.project-link:hover {
+    background: #5a6fd8;
+    color: white !important;
+    text-decoration: none !important;
+}
 
 .project-description {
     color: #666;
