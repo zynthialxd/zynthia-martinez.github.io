@@ -1002,4 +1002,24 @@ html {
     height: 60px;
     width: 100%;
 }
+    /* Specifically target Featured Projects section */
+.featured-projects h2:after,
+.featured-projects .section-title:after {
+    content: "";
+    display: block;
+    height: 60px !important;
+    width: 100%;
+}
+
+/* Alternative - force spacing on the featured projects container */
+.featured-projects {
+    margin-bottom: 80px !important;
+    padding-bottom: 60px !important;
+}
+
+/* Force the projects grid down */
+.featured-projects .projects-grid {
+    margin-top: 80px !important;
+    padding-top: 40px !important;
+}
 }
