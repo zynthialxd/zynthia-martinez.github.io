@@ -269,6 +269,12 @@ html {
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
+.project-metrics {
+    color: #667eea;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
 
 /* Skills Section */
 .skills {
