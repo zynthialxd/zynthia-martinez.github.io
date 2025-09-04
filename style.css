@@ -965,4 +965,41 @@ html {
     .footer-links {
         justify-content: center;
     }
+    /* Try adding this to the END of your CSS file to override everything */
+
+/* Force spacing after section titles */
+.section-title {
+    margin-bottom: 80px !important;
+    padding-bottom: 40px !important;
+    display: block !important;
+}
+
+/* Force spacing before project grids */
+.projects-grid {
+    margin-top: 60px !important;
+    padding-top: 40px !important;
+}
+
+/* Force spacing before skills grid */
+.skills-grid {
+    margin-top: 60px !important;
+    padding-top: 40px !important;
+}
+
+/* Alternative approach - add spacing to the parent containers */
+.featured-projects {
+    padding-bottom: 60px !important;
+}
+
+.skills {
+    padding-top: 120px !important;
+}
+
+/* Nuclear option - if nothing else works, try this */
+.section-title:after {
+    content: "";
+    display: block;
+    height: 60px;
+    width: 100%;
+}
 }
